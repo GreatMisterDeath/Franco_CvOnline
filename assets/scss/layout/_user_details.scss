@@ -1,0 +1,352 @@
+////////////////////////////////////////////////////////////////
+// Ajuste de los contenedores principales segun la resolucion //
+////////////////////////////////////////////////////////////////
+@mixin mix_principal_container_adjuster
+{
+    @media screen and (max-width: 991px)
+    {
+        width: 100%;
+        padding-left: 10vw;
+    }
+    @media screen and (min-width: 992px)
+    {
+        width: 80%;
+        margin-left: 25vw;
+    }
+}
+
+///////////////////////////////////////////////////
+// Agranda la fuente en funcion de la resolucion //
+///////////////////////////////////////////////////
+@mixin mix_font_size($font-size-value, $font-size-factor)
+{
+    @media screen and (max-width: 991px)
+    {
+        font-size: $font-size-value * $font-size-factor;
+    }
+    @media screen and (min-width: 992px)
+    {
+        font-size: $font-size-value;
+    }
+}
+
+//////////////////////
+// Contenedor padre //
+//////////////////////
+.userDetails
+{
+    // Con flexbox iba a conseguir el mismo resultado, pero con el fin de mostrar su uso con algo minimo...
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin-top: 5vw;
+
+    @include mix_principal_container_adjuster;
+}
+//////////////////////////////
+// Contenedor hijo "Perfil" //
+//////////////////////////////
+.userDetails__profile
+{
+    width: 90%;
+
+    h1
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-black;
+        @include mix_font_size(5.5vw, 2.0);
+    }
+    h3
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(2.0vw, 2.0);
+    }
+    h4
+    {
+        color: $color-nearBlack;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(2.0vw, 2.0);
+    }
+    p
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-light;
+        @include mix_font_size(1.75vw, 3.0);
+
+        padding-top: 5vw;
+    }
+
+    border-bottom: 2px solid $color-navyBlue;
+}
+
+.userDetails__profile-details
+{
+    display: flex;
+
+    @media screen and (max-width: 991px)
+    {
+        flex-direction: column;
+    }
+    @media screen and (min-width: 992px)
+    {
+        flex-direction: row;
+    }
+}
+
+.userDetails__profile-SVGicon
+{
+    margin-top: 64px;
+    margin-bottom: 64px;
+    color: $color-navyBlue;
+}
+
+///////////////////////////////////
+// Contenedor hijo "Experiencia" //
+///////////////////////////////////
+.userDetails__experience
+{
+    width: 90%;
+
+    h1
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-black;
+        @include mix_font_size(5.5vw, 2.0);
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    h2
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(3.0vw, 2.0);
+    }
+    h3
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(2.0vw, 2.0);
+    }
+    p
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-light;
+        @include mix_font_size(1.75vw, 3.0);
+
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    border-bottom: 2px solid $color-navyBlue;
+}
+
+.userDetails__experience-details
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/////////////////////////////////
+// Contenedor hijo "Educacion" //
+/////////////////////////////////
+.userDetails__education
+{
+    width: 90%;
+
+    h1
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-black;
+        @include mix_font_size(5.5vw, 2.0);
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    h2
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(3.0vw, 2.0);
+    }
+    h3
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-regular;
+        @include mix_font_size(2.0vw, 2.0);
+    }
+    p
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-light;
+        @include mix_font_size(1.75vw, 3.0);
+                margin-bottom: 5vw;
+    }
+
+    border-bottom: 2px solid $color-navyBlue;
+}
+
+.userDetails__education-details
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/////////////////////////////////
+// Contenedor hijo "Educacion" //
+/////////////////////////////////
+.userDetails__skills
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+
+    h1
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-black;
+        @include mix_font_size(5.5vw, 2.0);
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    h2
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(3.0vw, 2.0);
+    }
+    h3
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-regular;
+        @include mix_font_size(2.0vw, 2.0);
+
+        margin-bottom: 5vw;
+    }
+    p
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-light;
+        @include mix_font_size(1.75vw, 3.0);
+
+        padding-bottom: 5vw
+    }
+
+    border-bottom: 2px solid $color-navyBlue;
+}
+
+.userDetails__skills-details
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+////////////////////////////////
+// Contenedor hijo "Contacto" //
+////////////////////////////////
+.userDetails__contact
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+
+    h1
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-black;
+        @include mix_font_size(5.5vw, 2.0);
+
+        margin-top: 5vw;
+    }
+    h2
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(3.0vw, 2.0);
+
+        margin-top: 5vw;
+    }
+    h3
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        @include mix_font_size(2.0vw, 2.0);
+    }
+    p
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-light;
+        @include mix_font_size(1.75vw, 3.0);
+
+        padding-bottom: 5vw
+    }
+    label
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-regular;
+        @include mix_font_size(1.5vw, 2.0);
+
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    textarea
+    {
+        margin-bottom: 4vw;
+    }
+}
+
+.userDetails__skills-details1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

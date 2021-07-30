@@ -1,0 +1,14 @@
+// Importacion de fuentes
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+// Integracion de parciales
+@import 'abstract/reset';
+@import 'abstract/variables';
+//@import "vendors/";
+//@import 'base/';
+@import 'layout/nav_container';
+@import 'layout/principal_container';
+@import 'layout/user_details';
+//@import 'components/';
+//@import 'pages/';
+//@import 'themes/';

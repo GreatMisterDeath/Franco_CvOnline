@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.navContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7CEA9C;
+  width: 20%;
+  height: inherit;
+}
+@media screen and (max-width: 991px) {
+  .navContainer {
+    display: none !important;
+  }
+}
+.navContainer a {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+  font-size: 2vw;
+  padding-top: 1vw;
+  text-decoration: none;
+}
+.navContainer a:hover {
+  color: #FFFFFF;
+}
+.navContainer a:focus {
+  color: #FFFFFF;
+}
+
+.navContainer__bootstrapNavbar {
+  width: 100%;
+  background-color: #7CEA9C !important;
+}
+.navContainer__bootstrapNavbar a {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+  font-size: 5vw;
+  padding-top: 1vw;
+  text-decoration: none;
+}
+.navContainer__bootstrapNavbar a:hover {
+  color: #FFFFFF;
+}
+.navContainer__bootstrapNavbar a:focus {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 992px) {
+  .navContainer__bootstrapNavbar {
+    display: none !important;
+  }
+}
+
+.navContainer__avatar {
+  border-radius: 50%;
+}
+@media screen and (max-width: 991px) {
+  .navContainer__avatar {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navContainer__avatar {
+    margin-top: 4vw;
+    width: 50%;
+  }
+}
+
+.nav-link {
+  color: #2D3047 !important;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+  font-size: 2vw;
+  padding-top: 1vw;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #FFFFFF !important;
+}
+.nav-link:focus {
+  color: #FFFFFF !important;
+}
+
+.principalContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+@media screen and (max-width: 991px) {
+  .principalContainer {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  .principalContainer {
+    flex-direction: row;
+  }
+}
+
+.userDetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails {
+    width: 100%;
+    padding-left: 10vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails {
+    width: 80%;
+    margin-left: 25vw;
+  }
+}
+
+.userDetails__profile {
+  width: 90%;
+  border-bottom: 2px solid #2D3047;
+}
+.userDetails__profile h1 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 900;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__profile h1 {
+    font-size: 11vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__profile h1 {
+    font-size: 5.5vw;
+  }
+}
+.userDetails__profile h3 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__profile h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__profile h3 {
+    font-size: 2vw;
+  }
+}
+.userDetails__profile h4 {
+  color: #071013;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__profile h4 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__profile h4 {
+    font-size: 2vw;
+  }
+}
+.userDetails__profile p {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 300;
+  padding-top: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__profile p {
+    font-size: 5.25vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__profile p {
+    font-size: 1.75vw;
+  }
+}
+
+.userDetails__profile-details {
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__profile-details {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__profile-details {
+    flex-direction: row;
+  }
+}
+
+.userDetails__profile-SVGicon {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  color: #2D3047;
+}
+
+.userDetails__experience {
+  width: 90%;
+  border-bottom: 2px solid #2D3047;
+}
+.userDetails__experience h1 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 900;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__experience h1 {
+    font-size: 11vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__experience h1 {
+    font-size: 5.5vw;
+  }
+}
+.userDetails__experience h2 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__experience h2 {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__experience h2 {
+    font-size: 3vw;
+  }
+}
+.userDetails__experience h3 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__experience h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__experience h3 {
+    font-size: 2vw;
+  }
+}
+.userDetails__experience p {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 300;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__experience p {
+    font-size: 5.25vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__experience p {
+    font-size: 1.75vw;
+  }
+}
+
+.userDetails__experience-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userDetails__education {
+  width: 90%;
+  border-bottom: 2px solid #2D3047;
+}
+.userDetails__education h1 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 900;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__education h1 {
+    font-size: 11vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__education h1 {
+    font-size: 5.5vw;
+  }
+}
+.userDetails__education h2 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__education h2 {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__education h2 {
+    font-size: 3vw;
+  }
+}
+.userDetails__education h3 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 400;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__education h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__education h3 {
+    font-size: 2vw;
+  }
+}
+.userDetails__education p {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 300;
+  margin-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__education p {
+    font-size: 5.25vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__education p {
+    font-size: 1.75vw;
+  }
+}
+
+.userDetails__education-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userDetails__skills {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-bottom: 2px solid #2D3047;
+}
+.userDetails__skills h1 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 900;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__skills h1 {
+    font-size: 11vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__skills h1 {
+    font-size: 5.5vw;
+  }
+}
+.userDetails__skills h2 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__skills h2 {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__skills h2 {
+    font-size: 3vw;
+  }
+}
+.userDetails__skills h3 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 400;
+  margin-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__skills h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__skills h3 {
+    font-size: 2vw;
+  }
+}
+.userDetails__skills p {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 300;
+  padding-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__skills p {
+    font-size: 5.25vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__skills p {
+    font-size: 1.75vw;
+  }
+}
+
+.userDetails__skills-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userDetails__contact {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.userDetails__contact h1 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 900;
+  margin-top: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__contact h1 {
+    font-size: 11vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__contact h1 {
+    font-size: 5.5vw;
+  }
+}
+.userDetails__contact h2 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+  margin-top: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__contact h2 {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__contact h2 {
+    font-size: 3vw;
+  }
+}
+.userDetails__contact h3 {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__contact h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__contact h3 {
+    font-size: 2vw;
+  }
+}
+.userDetails__contact p {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 300;
+  padding-bottom: 5vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__contact p {
+    font-size: 5.25vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__contact p {
+    font-size: 1.75vw;
+  }
+}
+.userDetails__contact label {
+  color: #2D3047;
+  font-family: "Lato", "Verdana";
+  font-weight: 400;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+@media screen and (max-width: 991px) {
+  .userDetails__contact label {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .userDetails__contact label {
+    font-size: 1.5vw;
+  }
+}
+.userDetails__contact textarea {
+  margin-bottom: 4vw;
+}
+
+.userDetails__skills-details1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

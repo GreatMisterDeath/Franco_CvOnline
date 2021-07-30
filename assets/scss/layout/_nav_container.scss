@@ -1,0 +1,126 @@
+@mixin mix_hide($hide_on_tablet_and_mobile)
+{
+    @media screen and (max-width: 991px)
+    {
+        @if ($hide_on_tablet_and_mobile == 1)
+        {
+            display: none !important;
+        }
+    }
+    @media screen and (min-width: 992px)
+    {
+        @if ($hide_on_tablet_and_mobile == 0)
+        {
+            display: none !important;
+        }
+    }
+}
+
+.navContainer
+{
+    @include mix_hide(1);
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $color-green;
+
+    width: 20%;
+    height: inherit;
+
+    a
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        font-size: 2vw;
+
+        padding-top: 1vw;
+        text-decoration: none;
+
+        &:hover
+        {
+            color: $color-white;
+        }
+
+        &:focus
+        {
+            color: $color-white;
+        }
+    }
+}
+
+.navContainer__bootstrapNavbar
+{
+    width: 100%;
+
+    a
+    {
+        color: $color-navyBlue;
+
+        font-family: $font-lato;
+        font-weight: $font-bold;
+        font-size: 5vw;
+
+        padding-top: 1vw;
+        text-decoration: none;
+
+        &:hover
+        {
+            color: $color-white;
+        }
+
+        &:focus
+        {
+            color: $color-white;
+        }
+    }
+
+    background-color: $color-green !important;
+
+    @include mix_hide(0);
+}
+
+.navContainer__bootstrapNavbar-togglerPosition
+{
+}
+
+.navContainer__avatar
+{
+    @media screen and (max-width: 991px)
+    {
+        width: 15%;
+    }
+    @media screen and (min-width: 992px)
+    {
+        margin-top: 4vw;
+        width: 50%;
+    }
+
+    border-radius: 50%
+}
+
+.nav-link
+{
+    color: $color-navyBlue !important;
+
+    font-family: $font-lato;
+    font-weight: $font-bold;
+    font-size: 2vw;
+    padding-top: 1vw;
+    text-decoration: none;
+
+    &:hover
+    {
+        color: $color-white !important;
+    }
+
+    &:focus
+    {
+        color: $color-white !important;
+    }
+}
