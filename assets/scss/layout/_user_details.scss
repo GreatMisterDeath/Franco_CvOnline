@@ -15,11 +15,16 @@
     }
 }
 
-///////////////////////////////////////////////////
-// Agranda la fuente en funcion de la resolucion //
-///////////////////////////////////////////////////
-@mixin mix_font_size($font-size-value, $font-size-factor)
+//////////////////////////////////////////////////////////
+// Propiedades de la fuente en funcion de la resolucion //
+//////////////////////////////////////////////////////////
+@mixin mix_font_propeties($font-color-value, $font-family-value, $font-weight-value, $font-size-value, $font-size-factor)
 {
+    color: $font-color-value;
+
+    font-family: $font-family-value;
+    font-weight: $font-weight-value;
+
     @media screen and (max-width: 991px)
     {
         font-size: $font-size-value * $font-size-factor;
@@ -52,36 +57,19 @@
 
     h1
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-black;
-        @include mix_font_size(5.5vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-black, 5.5vw, 2.0);
     }
     h3
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(2.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 2.0vw, 2.0);
     }
     h4
     {
-        color: $color-nearBlack;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(2.0vw, 2.0);
+        @include mix_font_propeties($color-nearBlack, $font-lato, $font-bold, 2.0vw, 2.0);
     }
     p
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-light;
-        @include mix_font_size(1.75vw, 3.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-light, 1.75vw, 3.0);
         padding-top: 5vw;
     }
 
@@ -118,39 +106,21 @@
 
     h1
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-black;
-        @include mix_font_size(5.5vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-black, 5.5vw, 2.0);
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
     h2
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(3.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 3.0vw, 2.0);
     }
     h3
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(2.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 2.0vw, 2.0);
     }
     p
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-light;
-        @include mix_font_size(1.75vw, 3.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-light, 1.75vw, 3.0);
         padding-top: 5vw;
         padding-bottom: 5vw;
     }
@@ -174,39 +144,22 @@
 
     h1
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-black;
-        @include mix_font_size(5.5vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-black, 5.5vw, 2.0);
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
     h2
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(3.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 3.0vw, 2.0);
     }
     h3
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-regular;
-        @include mix_font_size(2.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-regular, 2.0vw, 2.0);
     }
     p
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-light;
-        @include mix_font_size(1.75vw, 3.0);
-                margin-bottom: 5vw;
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-light, 1.75vw, 3.0);
+        margin-bottom: 5vw;
     }
 
     border-bottom: 2px solid $color-navyBlue;
@@ -231,41 +184,22 @@
 
     h1
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-black;
-        @include mix_font_size(5.5vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-black, 5.5vw, 2.0);
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
     h2
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(3.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 3.0vw, 2.0);
     }
     h3
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-regular;
-        @include mix_font_size(2.0vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-regular, 2.0vw, 2.0);
         margin-bottom: 5vw;
     }
     p
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-light;
-        @include mix_font_size(1.75vw, 3.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-light, 1.75vw, 3.0);
         padding-bottom: 5vw
     }
 
@@ -291,50 +225,26 @@
 
     h1
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-black;
-        @include mix_font_size(5.5vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-black, 5.5vw, 2.0);
         margin-top: 5vw;
     }
     h2
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(3.0vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 3.0vw, 2.0);
         margin-top: 5vw;
     }
     h3
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-bold;
-        @include mix_font_size(2.0vw, 2.0);
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-bold, 5.5vw, 2.0);
     }
     p
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-light;
-        @include mix_font_size(1.75vw, 3.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-light, 1.75vw, 3.0);
         padding-bottom: 5vw
     }
     label
     {
-        color: $color-navyBlue;
-
-        font-family: $font-lato;
-        font-weight: $font-regular;
-        @include mix_font_size(1.5vw, 2.0);
-
+        @include mix_font_propeties($color-navyBlue, $font-lato, $font-regular, 1.75vw, 3.0);
         padding-top: 1vw;
         padding-bottom: 1vw;
     }

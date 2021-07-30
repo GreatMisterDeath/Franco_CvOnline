@@ -90,7 +90,6 @@
 
 .principalContainer {
   display: flex;
-  flex-direction: row;
   height: 100vh;
 }
 @media screen and (max-width: 991px) {
@@ -478,12 +477,12 @@
 }
 @media screen and (max-width: 991px) {
   .userDetails__contact h3 {
-    font-size: 4vw;
+    font-size: 11vw;
   }
 }
 @media screen and (min-width: 992px) {
   .userDetails__contact h3 {
-    font-size: 2vw;
+    font-size: 5.5vw;
   }
 }
 .userDetails__contact p {
@@ -511,12 +510,12 @@
 }
 @media screen and (max-width: 991px) {
   .userDetails__contact label {
-    font-size: 3vw;
+    font-size: 5.25vw;
   }
 }
 @media screen and (min-width: 992px) {
   .userDetails__contact label {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
   }
 }
 .userDetails__contact textarea {
