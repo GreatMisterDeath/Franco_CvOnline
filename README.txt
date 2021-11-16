@@ -20,3 +20,5 @@ RESPONDIENDO PREGUNTAS:
 
 	- Usar medidas relativas en la mayoria de los elementos junto a Flexbox y los media querys 
 	para ajustar el contenido segun el dispositivo.
+	
+https://greatmisterdeath.github.io/Franco_CvOnline/
